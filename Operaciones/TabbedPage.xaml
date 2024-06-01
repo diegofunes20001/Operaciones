@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Operaciones.TabbedPage"
+             Title="TabbedPage">
+
+
+    <AbsoluteLayout>
+        <ContentPage Title="Área del cuadrado">
+            <VerticalStackLayout>
+                <Label Text="Lado del cuadrado:" />
+                <Entry x:Name="squareSideEntry" Placeholder="Ingrese el lado del cuadrado" />
+                <Button Text="Calcular área" Clicked="CalculateSquareAreaButton_Clicked" />
+                <Label x:Name="squareAreaLabel" Text="Área: " />
+                <Button Text="Limpiar" Clicked="ClearSquareButton_Clicked" />
+            </VerticalStackLayout>
+        </ContentPage>
+        <ContentPage Title="Área del círculo">
+            <StackLayout>
+                <Label Text="Radio del círculo:" />
+                <Entry x:Name="circleRadiusEntry" Placeholder="Ingrese el radio del círculo" />
+                <Button Text="Calcular área" Clicked="CalculateCircleAreaButton_Clicked" />
+                <Label x:Name="circleAreaLabel" Text="Área: " />
+                <Button Text="Limpiar" Clicked="ClearCircleButton_Clicked" />
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Área del rectángulo">
+            <StackLayout>
+                <Label Text="Ancho del rectángulo:" />
+                <Entry x:Name="rectangleWidthEntry" Placeholder="Ingrese el ancho del rectángulo" />
+                <Label Text="Altura del rectángulo:" />
+                <Entry x:Name="rectangleHeightEntry" Placeholder="Ingrese la altura del rectángulo" />
+                <Button Text="Calcular área" Clicked="CalculateRectangleAreaButton_Clicked" />
+                <Label x:Name="rectangleAreaLabel" Text="Área: " />
+                <Button Text="Limpiar" Clicked="ClearCircleButton_Clicked" />
+            </StackLayout>
+        </ContentPage>
+    </AbsoluteLayout>
+</ContentPage>
